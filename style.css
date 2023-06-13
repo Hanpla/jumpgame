@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.blockBox {
+    position: absolute;
+    height: 100vh;
+}
+
+.blockTop {
+    border: 1px solid black;
+    width: 50px;
+    height: 40vh;
+    background-color: green;
+}
+
+.blockBot {
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid black;
+    width: 50px;
+    height: 40vh;
+    background-color: green;
+}
+
+.player {
+    position: absolute;
+    top: 450px;
+    left: 10vh;
+    width: 3vh;
+    height: 3vh;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: red;
+}
+
+.over {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.over>h1 {
+    color: red;
+}
+
+.over>p {
+    color: red;
+    font-weight: 900;
+}
+
+.over>button {
+    width: 100px;
+}
